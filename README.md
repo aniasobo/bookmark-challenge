@@ -14,10 +14,10 @@ CREATE DATABASE bookmark_manager;
 
 To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
 
-## Specifications
+## Functionality
 
-- [ ] Show a list of bookmarks
-- [ ] Add new bookmarks
+- [x] Show a list of bookmarks
+- [x] Add new bookmarks
 - [ ] Delete bookmarks
 - [ ] Update bookmarks
 - [ ] Comment on bookmarks
@@ -29,7 +29,7 @@ To set up the appropriate tables, connect to the database in `psql` and run the 
 
 We broke the specifications down into User stories and looked to implement each one before moving onto the next
 
-### Show a list of bookmarks
+### User stories covered
 
 ```sh
 As a user
@@ -39,9 +39,12 @@ I want to open my bookmark manager and see that it is empty
 As a user
 So that I can see my bookmarks
 I want to open my bookmark manager and see a list of bookmarks
-```
 
-We broke this specification into 2 user stories to make it clear the behaviour we expect to see both when there are and aren't any bookmarks.
+ As a user
+ so that I don't lose my bookmarks
+ I want to be able to add a bookmark and see it on the list
+
+```
 
 Domain model:
 
