@@ -1,2 +1,6 @@
 <h1>Bookmark Manager</h1>
-<div><%= @bookmarks.join("<br>") %></div>
+<ol><% @bookmarks.each do |bookmark| %>
+<li><a href="<%= p bookmark %>"><%= p bookmark %></a></li>
+<% end %>
+</ol>
+
