@@ -9,7 +9,6 @@ class BookmarkApp < Sinatra::Base
 
   post '/new' do
     @bookmarks = BookmarkManager.add(params[:url])
-  #  erb :index
     redirect '/'
   end
 

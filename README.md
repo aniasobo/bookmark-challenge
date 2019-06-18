@@ -40,10 +40,9 @@ As a user
 So that I can see my bookmarks
 I want to open my bookmark manager and see a list of bookmarks
 
- As a user
- so that I don't lose my bookmarks
- I want to be able to add a bookmark and see it on the list
-
+As a user
+so that I don't lose my bookmarks
+I want to be able to add a bookmark and see it on the list
 ```
 
 Domain model:
