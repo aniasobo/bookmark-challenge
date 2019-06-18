@@ -15,4 +15,11 @@ feature 'view bookmarks list' do
     expect(page).to have_content "http://www.destroyallsoftware.com"
   end
 
+  scenario 'bookmarks are active clickable links' do
+    visit('/')
+    expect(page).to have_link("http://www.makersacademy.com", :href => "http://www.makersacademy.com")    
+    expect(page).to have_link("http://www.google.com", :href => "http://www.google.com")
+    expect(page).to have_link("http://www.destroyallsoftware.com", :href => "http://www.destroyallsoftware.com")
+  end
+
 end
