@@ -1,12 +1,12 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'sinatra'
 gem 'pg'
+gem 'sinatra'
 
 group :test do
+  gem 'capybara'
   gem 'rspec-sinatra'
   gem 'rspec'
-  gem 'capybara'
   gem 'rubocop'
   gem 'simplecov'
   gem 'simplecov-console'
