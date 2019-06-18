@@ -3,12 +3,10 @@ require 'bookmark_manager'
 describe BookmarkManager do
 #  let(:link) { double :bookmark }
 
-  describe '#all' do
+  describe '.all' do
     it 'displays all bookmarks' do
-      expect(subject.all).to be_instance_of(Array)
+      expect(BookmarkManager.all).to be_instance_of(Array)
+      expect(BookmarkManager.all.length).to eq 3
     end
-
-   # it 'displays all bookmarks stored in the database' do
-   # end
   end
 end
