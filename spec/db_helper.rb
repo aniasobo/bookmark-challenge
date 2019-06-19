@@ -4,7 +4,7 @@ def test_db_connect
   plug = PG.connect(dbname: 'bookmark_manager_test')
 
   # to clean the bookmarks table:
-  # plug.exec("TRUNCATE bookmarks;")
+   plug.exec("TRUNCATE bookmarks;")
 end
 
 def test_bookmarks
