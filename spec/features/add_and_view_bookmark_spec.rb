@@ -15,8 +15,9 @@ feature 'Adding bookmarks' do
   scenario 'when form completed bookmark is displayed' do
     visit('/')
     fill_in 'url', with: 'real url'
+    fill_in 'title', with: 'GOOGLE'
     click_button 'Add bookmark'
-    expect(page).to have_content('real url')
+    expect(page).not_to have_content('real url')
+    expect(page).to have_content('GOOGLE')
   end
-
 end
