@@ -1,6 +1,6 @@
 <h1>Bookmark Manager</h1>
 <ol><% @bookmarks.each do |bookmark| %>
-<li><a href="<%= p bookmark %>"><%= p bookmark %></a></li>
+<li><a href="<%= bookmark %>"><%= bookmark %></a></li>
 <% end %>
 </ol>
 <form action="/new" method="post">

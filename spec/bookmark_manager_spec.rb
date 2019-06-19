@@ -2,9 +2,9 @@ require 'bookmark_manager'
 
 describe BookmarkManager do
 
-  xdescribe '.add' do
+  describe '.create' do
     it 'adds a new bookmark to database' do
-      new_bookmark = BookmarkManager.add('https://github.com/')
+      new_bookmark = BookmarkManager.create('https://github.com/')
       expect(BookmarkManager.all).to include('https://github.com/')
     end
   end
