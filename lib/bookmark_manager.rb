@@ -12,7 +12,7 @@ class BookmarkManager
     con.exec("INSERT INTO bookmarks (url) VALUES ('#{new_bookmark}');")
   end
 
-  attr_reader :boookmarks
+  attr_reader :bookmarks
 
   def initialize
     @bookmarks = []
