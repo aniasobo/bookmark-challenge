@@ -4,12 +4,11 @@ require_relative 'lib/bookmark_manager'
 class BookmarkApp < Sinatra::Base
   get '/' do
     @bookmarks = BookmarkManager.all
-    p ENV
     erb :index
   end
 
   post '/new' do
-    @bookmarks = BookmarkManager.new(params[:url])
+    BookmarkManager.new(params[:url])
     redirect '/'
   end
 

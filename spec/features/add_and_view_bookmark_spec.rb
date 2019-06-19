@@ -12,7 +12,11 @@ feature 'Adding bookmarks' do
     expect(page).to have_button('Add bookmark')
   end
   
-  xscenario 'submitted bookmark appears on list' do
+  scenario 'when form completed bookmark is displayed' do
+    visit('/')
+    fill_in 'url', with: 'real url'
+    click_button 'Add bookmark'
+    expect(page).to have_content('real url')
   end
 
 end

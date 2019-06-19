@@ -8,7 +8,7 @@
         null,
         1,
         1,
-        1,
+        0,
         0,
         null,
         null,
@@ -18,8 +18,7 @@
         null,
         1,
         1,
-        1,
-        1,
+        0,
         0,
         0,
         null,
@@ -27,23 +26,11 @@
         null,
         null
       ],
-      "/Users/anna/Documents/projects/bookmark-challenge/spec/features/add_bookmark_spec.rb": [
+      "/Users/anna/Documents/projects/bookmark-challenge/spec/features/add_and_view_bookmark_spec.rb": [
         null,
         null,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/anna/Documents/projects/bookmark-challenge/spec/features/view_bookmarks_spec.rb": [
         null,
         null,
         null,
@@ -57,19 +44,13 @@
         1,
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
-        null,
-        1,
-        1,
-        1,
-        0,
-        0,
         null,
         null
       ]
     },
-    "timestamp": 1560952825
+    "timestamp": 1560957626
   }
 }
