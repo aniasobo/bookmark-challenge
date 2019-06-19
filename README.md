@@ -4,12 +4,22 @@ You're going to build a bookmark manager. A bookmark manager is a website to mai
 
 ## Set up
 
-### Set up database
+### Set up development database
 
 Connect to `psql` and create the `bookmark_manager` database:
 
-```sql
+```
 CREATE DATABASE bookmark_manager;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+
+### Set up test database
+
+Connect to `psql` and create the `bookmark_manager_test` database:
+
+```
+CREATE DATABASE bookmark_manager_test;
 ```
 
 To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
@@ -41,7 +51,7 @@ So that I can see my bookmarks
 I want to open my bookmark manager and see a list of bookmarks
 
 As a user
-so that I don't lose my bookmarks
+so that I do not lose my bookmarks
 I want to be able to add a bookmark and see it on the list
 ```
 
