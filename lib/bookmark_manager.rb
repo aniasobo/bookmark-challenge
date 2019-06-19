@@ -2,19 +2,20 @@ require 'pg'
 
 class BookmarkManager
   def self.all
-    con = PG.connect(dbname: 'bookmark_manager')
+    if ENV['ENVIRONMENT'] == 'test'
+      con = PG.connect(dbname: 'bookmark_manager_test')
+    else
+      con = PG.connect(dbname: 'bookmark_manager')
+    end
     results = con.exec('SELECT url FROM bookmarks;') 
     results.map { |bookmarks| bookmarks['url'] } 
   end
 
-  def self.add(new_bookmark)
+  def initialize(url)
     con = PG.connect(dbname: 'bookmark_manager')
-    con.exec("INSERT INTO bookmarks (url) VALUES ('#{new_bookmark}');")
+    con.exec("INSERT INTO bookmarks (url) VALUES ('#{url}');")
   end
 
   attr_reader :bookmarks
 
-  def initialize
-    @bookmarks = []
-  end
 end
